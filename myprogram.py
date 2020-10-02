@@ -1,3 +1,4 @@
+#import module
 import pyttsx3
 import os
 print("\t\t\t\t\t     -----------------------------------")
@@ -79,6 +80,12 @@ while True:
 	elif (("what" in p) or ("open" in p) or ("launch" in p) or ("show" in p)) and(("current time" in p) or ("time" in p)):
 		pyttsx3.speak("time is")
 		os.system("time /t")
+		
+	#open firefox in browser
+	
+	elif (("fire" in p) or ("open" in p) or ("launch" in p) or ("show" in p)) and(("firefox" in p):
+		pyttsx3.speak("firefox is launching")
+		os.system("firefox")
 
 	#exit the program
 	elif (("exit" in p) or ("quit" in p) or "close" in p):
@@ -86,5 +93,6 @@ while True:
 	else :
 		print("SORRY!GIVEN INPUT DOESN'T SUPPORT")
 		pyttsx3.speak("SORRY!GIVEN INPUT DOESN'T SUPPORT")
+		
 print("THANK YOU :)")
 pyttsx3.speak("THANK YOU")
